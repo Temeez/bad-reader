@@ -1,0 +1,156 @@
+/* SEPIA THEME */
+.reader-scroller.sepia {
+    background-color: #f4ecd8;
+}
+.reader-content.sepia text {
+    background-color: #f4ecd8;
+    color: #111;
+}
+.side.sepia {
+    background-color: #dcd4c2;
+    border-left: 1px solid #9f9a8d;
+    border-right: 1px solid #9f9a8d;
+}
+.side-header.sepia {
+    border-top: 1px solid #9f9a8d;
+}
+.sepia button.link:hover label {
+    background-color: #f7eee1;
+}
+notebook.sepia header > tabs > tab {
+    background-color: #c3bdad;
+    border-right: #9f9a8d solid 1px;
+    border-bottom: #9f9a8d solid 1px;
+}
+notebook.sepia header > tabs > tab:checked {
+    background-color: #dcd4c2;
+}
+.sepia button.link label {
+    color: #4a4841;
+}
+
+
+/* DARK THEME */
+.reader-scroller.dark {
+    background-color: #1c1b22;
+}
+.reader-content.dark text {
+    background-color: #1c1b22;
+    color: #eee;
+}
+.side.dark {
+    color: #fff;
+    background-color: #2d2c44;
+    border-left: 1px solid #453f5e;
+    border-right: 1px solid #453f5e;
+}
+.side-header.dark {
+    border-top: 1px solid #453f5e;
+}
+.dark button.link:hover label {
+    color: #fff;
+    background-color: #34304d;
+}
+notebook.dark header > tabs > tab {
+    color: #fff;
+    background-color: #2c2b45;
+    border-right: #453f5e solid 1px;
+    border-bottom: #453f5e solid 1px;
+
+}
+notebook.dark header > tabs > tab:checked {
+    color: #fff;
+    background-color: #2d2c44;
+}
+.dark button.link label {
+    color: #fff;
+}
+
+
+/* LIGTH THEME*/
+.reader-scroller.light {
+    background-color: #fff;
+}
+.reader-content.light text {
+    background-color: #fff;
+    color: #333;
+}
+.side.light {
+    background-color: #eee;
+    border-left: 1px solid #9f9a8d;
+    border-right: 1px solid #9f9a8d;
+}
+.side-header.light {
+    border-top: 1px solid #aaa;
+}
+.light button.link:hover label {
+    background-color: #ddd;
+}
+notebook.light header > tabs > tab {
+    background-color: #ddd;
+    border-right: #aaa solid 1px;
+    border-bottom: #aaa solid 1px;
+}
+notebook.light header > tabs > tab:checked {
+    background-color: #eee;
+}
+.light button.link label {
+    color: #111;
+}
+
+
+
+
+spinner {
+    color: orange;
+}
+
+
+menuitem check {
+    border: 0;
+    padding: 0 6px 0 0;
+}
+
+button.link label {
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+button.link {
+    margin: 0;
+    padding: 0;
+}
+
+notebook header > tabs > tab {
+    background-image: none;
+    border-style: solid;
+    border-image-width: 0 1px;
+    box-shadow: none;
+    margin: 0;
+}
+
+notebook header {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+}
+
+notebook header > tabs {
+    margin: 0;
+    padding: 0;
+}
+
+notebook header > tabs > tab:checked {
+    outline-width: 0;
+    border-bottom: 0;
+}
+
+.settings-title {
+    font-size: 16px;
+}
+
+.settings-notebook {
+    background-color: #fafafa;
+}

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkTextBuffer" id="textbuffer1">
+    <property name="text" translatable="yes">
+
+
+
+Drag epub file here to open it.</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer2">
+    <property name="text" translatable="yes">Please don't annihilate your eyes with reading without breaks! :3</property>
+  </object>
+  <object class="GtkApplicationWindow" id="main_window">
+    <property name="width-request">680</property>
+    <property name="height-request">600</property>
+    <property name="can-focus">False</property>
+    <property name="window-position">center</property>
+    <property name="default-width">680</property>
+    <property name="default-height">600</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="hide-titlebar-when-maximized">True</property>
+    <property name="icon-name">application-x-firmware</property>
+    <property name="show-menubar">False</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkMenuBar" id="menu_bar">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">File</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.open_file_chooser</property>
+                        <property name="label" translatable="yes">Open File..</property>
+                        <property name="use-underline">True</property>
+                        <accelerator key="o" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.quit</property>
+                        <property name="label" translatable="yes">Quit</property>
+                        <property name="use-underline">True</property>
+                        <accelerator key="q" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">View</property>
+                <property name="use-underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.toggle_toc</property>
+                        <property name="label" translatable="yes">Table of Contents</property>
+                        <accelerator key="c" signal="activate"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.toggle_recent</property>
+                        <property name="label" translatable="yes">Recent Files</property>
+                        <property name="use-underline">True</property>
+                        <accelerator key="r" signal="activate"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.page</property>
+                        <property name="label" translatable="yes">Goto page</property>
+                        <property name="use-underline">True</property>
+                        <accelerator key="g" signal="activate"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.toggle_fullscreen</property>
+                        <property name="label" translatable="yes">Fullscreen</property>
+                        <accelerator key="f" signal="activate"/>
+                        <accelerator key="F11" signal="activate"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Tools</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.open_settings</property>
+                        <property name="label" translatable="yes">Settings</property>
+                        <accelerator key="F2" signal="activate"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.auto_scroll</property>
+                        <property name="label" translatable="yes">Toggle auto scrolling</property>
+                        <property name="use-underline">True</property>
+                        <accelerator key="F8" signal="activate"/>
+                        <accelerator key="section" signal="activate"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Help</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="action-name">app.open_about</property>
+                        <property name="label" translatable="yes">About</property>
+                        <property name="use-underline">True</property>
+                        <accelerator key="F1" signal="activate"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <style>
+              <class name="menu-bar"/>
+            </style>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkOverlay" id="overlay">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="scroller_window">
+                    <property name="width-request">-1</property>
+                    <property name="height-request">600</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="vexpand">True</property>
+                    <property name="vscrollbar-policy">always</property>
+                    <property name="min-content-width">860</property>
+                    <property name="overlay-scrolling">False</property>
+                    <property name="propagate-natural-width">True</property>
+                    <child>
+                      <object class="GtkViewport">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="hexpand">True</property>
+                        <property name="vexpand">True</property>
+                        <property name="shadow-type">none</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="hexpand">True</property>
+                            <property name="vexpand">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <object class="GtkTextView" id="reader_header">
+                                <property name="width-request">860</property>
+                                <property name="height-request">80</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="double-buffered">False</property>
+                                <property name="halign">center</property>
+                                <property name="pixels-inside-wrap">5</property>
+                                <property name="editable">False</property>
+                                <property name="wrap-mode">word</property>
+                                <property name="justification">center</property>
+                                <property name="left-margin">20</property>
+                                <property name="right-margin">20</property>
+                                <property name="top-margin">20</property>
+                                <property name="cursor-visible">False</property>
+                                <property name="buffer">textbuffer2</property>
+                                <property name="accepts-tab">False</property>
+                                <style>
+                                  <class name="reader-content"/>
+                                  <class name="medium"/>
+                                </style>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkTextView" id="reader_textview">
+                                <property name="width-request">860</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="double-buffered">False</property>
+                                <property name="halign">center</property>
+                                <property name="pixels-inside-wrap">5</property>
+                                <property name="editable">False</property>
+                                <property name="wrap-mode">word</property>
+                                <property name="justification">center</property>
+                                <property name="left-margin">20</property>
+                                <property name="right-margin">20</property>
+                                <property name="top-margin">20</property>
+                                <property name="bottom-margin">20</property>
+                                <property name="cursor-visible">False</property>
+                                <property name="buffer">textbuffer1</property>
+                                <property name="accepts-tab">False</property>
+                                <style>
+                                  <class name="reader-content"/>
+                                  <class name="medium"/>
+                                </style>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <style>
+                      <class name="reader-scroller"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="index">-1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="main-window"/>
+    </style>
+  </object>
+</interface>

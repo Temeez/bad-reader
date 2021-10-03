@@ -1,0 +1,44 @@
+[package]
+name = "bad-reader"
+version = "1.0.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+parking_lot = "0.11.1"
+chrono = { version = "0.4.19", features = ["serde"] }
+select = "0.6.0-alpha.1"
+cascade = "1.0.0"
+regex = "1.5"
+clap = "3.0.0-beta.2"
+rust-embed = "6.2.0"
+epub = { git = "https://github.com/danigm/epub-rs" }
+
+# GTK (gui)
+gdk = "*"
+gdk-pixbuf = "*"
+gio = { version = "*" }
+gio-sys = "*"
+glib = "*"
+gtk-sys = "*"
+gtk = { version = "0.14", features = ["v3_24"] }
+
+# Errors
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Logging
+log = "0.4"
+fern = "0.6"
+
+# Encode/Decode
+bincode = "1.3.2"
+serde_derive = "1.0.124"
+serde = { version = "1.0", features = ["derive"] }
+
+#[dependencies.epub]
+#path = "../../epub-rs"
+
+#[profile.release]
+#debug = true
